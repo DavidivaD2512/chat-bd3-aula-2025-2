@@ -39,7 +39,11 @@ io.on('connection', socket=>{
         messages.push(data);
 
         socket.broadcast.emit('recivedMessage', data);
+
+        console.log("QTD MENSAGENS: " + messages.length);
     });
+
+    console.log("QTD MENSAGENS: " + messages.length);
 });
 
 server.listen(3000, ()=>{console.log("CHAT RODANDO EM - http://localhost:3000")});
