@@ -33,7 +33,7 @@
         // Função de renderização de mensagem no navegador
         function renderMessage(message) {
             $('.messages').append('<div class="message"<strong>' +
-                message.author +
+                message.usuario +
                 message.data_hora +
                 '</strong>: ' +
                 message.message
@@ -73,7 +73,7 @@
 
             // Criação do objeto JSON da mensagem
             var messageObject = {
-                author: usuario,
+                usuario: usuario,
                 data_hora: data_hora_msg,
                 message: mensagem
             }
